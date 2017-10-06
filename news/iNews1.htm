@@ -1,0 +1,246 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>行业新闻_大连巨力通液压管业有限公司</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="../css/css.css"  rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="waper">
+<div class="all">
+<div class="all1">
+<style type="text/css">
+.clearfix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clearfix {zoom:1;}
+
+.wrapper {width:1000px; margin:0 auto; padding-bottom:50px;}
+
+.shuoming {margin-top:20px; border:1px solid #ccc; padding-bottom:10px;}
+.shuoming dt {height:30px; line-height:30px; font-weight:bold; text-indent:10px;}
+.shuoming dd {line-height:20px; padding:5px 20px;}
+
+/* qqshop focus */
+#focus {width:1000px; height:240px; overflow:hidden; position:relative;}
+#focus ul {height:380px; position:absolute; margin: 0px;
+	padding: 0px;
+	list-style-type: none;}
+#focus ul li {
+	float: left;
+	width: 1000px;
+	height: 240px;
+	overflow: hidden;
+	position: relative;
+	background: #000;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+#focus ul li div {position:absolute; overflow:hidden;}
+#focus .btnBg {position:absolute; width:1000px; height:20px; left:0; bottom:0; background:#000;}
+#focus .btn {position:absolute; width:1000px; height:10px; padding:5px 10px; right:0; bottom:0; text-align:right;}
+#focus .btn span {display:inline-block; _display:inline; _zoom:1; width:25px; height:10px; _font-size:0; margin-left:5px; cursor:pointer; background:#fff;}
+#focus .btn span.on {background:#fff;}
+#focus .preNext {width:45px; height:100px; position:absolute; top:70px; background:url(images/sprite.png)/*tpa=http://www.hbbotong.com/images/sprite.png*/ no-repeat 0 0; cursor:pointer;}
+#focus .pre {left:0;}
+#focus .next {right:0; background-position:right top;}
+#focus ul li a img {
+	float: left;
+}
+</style>
+
+<script type="text/javascript" src="../js/jquery.min.js" ></script>
+<script type="text/javascript">
+$(function() {
+	var sWidth = $("#focus").width(); //获取焦点图的宽度（显示面积）
+	var len = $("#focus ul li").length; //获取焦点图个数
+	var index = 0;
+	var picTimer;
+	
+	//以下代码添加数字按钮和按钮后的半透明条，还有上一页、下一页两个按钮
+	var btn = "<div class='btnBg'></div><div class='btn'>";
+	for(var i=0; i < len; i++) {
+		btn += "<span></span>";
+	}
+	btn += "</div><div class='preNext pre'></div><div class='preNext next'></div>";
+	$("#focus").append(btn);
+	$("#focus .btnBg").css("opacity",0.5);
+
+	//为小按钮添加鼠标滑入事件，以显示相应的内容
+	$("#focus .btn span").css("opacity",0.4).mouseenter(function() {
+		index = $("#focus .btn span").index(this);
+		showPics(index);
+	}).eq(0).trigger("mouseenter");
+
+	//上一页、下一页按钮透明度处理
+	$("#focus .preNext").css("opacity",0.2).hover(function() {
+		$(this).stop(true,false).animate({"opacity":"0.5"},300);
+	},function() {
+		$(this).stop(true,false).animate({"opacity":"0.2"},300);
+	});
+
+	//上一页按钮
+	$("#focus .pre").click(function() {
+		index -= 1;
+		if(index == -1) {index = len - 1;}
+		showPics(index);
+	});
+
+	//下一页按钮
+	$("#focus .next").click(function() {
+		index += 1;
+		if(index == len) {index = 0;}
+		showPics(index);
+	});
+
+	//本例为左右滚动，即所有li元素都是在同一排向左浮动，所以这里需要计算出外围ul元素的宽度
+	$("#focus ul").css("width",sWidth * (len));
+	
+	//鼠标滑上焦点图时停止自动播放，滑出时开始自动播放
+	$("#focus").hover(function() {
+		clearInterval(picTimer);
+	},function() {
+		picTimer = setInterval(function() {
+			showPics(index);
+			index++;
+			if(index == len) {index = 0;}
+		},4000); //此4000代表自动播放的间隔，单位：毫秒
+	}).trigger("mouseleave");
+	
+	//显示图片函数，根据接收的index值显示相应的内容
+	function showPics(index) { //普通切换
+		var nowLeft = -index*sWidth; //根据index值计算ul元素的left值
+		$("#focus ul").stop(true,false).animate({"left":nowLeft},300); //通过animate()调整ul元素滚动到计算出的position
+		//$("#focus .btn span").removeClass("on").eq(index).addClass("on"); //为当前的按钮切换到选中的效果
+		$("#focus .btn span").stop(true,false).animate({"opacity":"0.4"},300).eq(index).stop(true,false).animate({"opacity":"1"},300); //为当前的按钮切换到选中的效果
+	}
+});
+
+</script>
+<script language="javascript">
+	function qiehuan(num){
+		for(var id = 0;id<=11;id++)
+		{
+			if(id==num)
+			{
+				document.getElementById("qh_con"+id).style.display="block";
+				document.getElementById("mynav"+id).className="nav_on";
+			}
+			else
+			{
+				document.getElementById("qh_con"+id).style.display="none";
+				document.getElementById("mynav"+id).className="";
+			}
+		}
+	}
+</script><div class="top">
+<div class="logo">
+</div>
+<div class="nav">
+<ul>
+<li><a href="../index.htm" target="_self">网站首页</a></li>
+<li><span>&nbsp;</span></li>
+<li><a href="../about.htm" target="_self">公司信息</a></li>
+<li><span>&nbsp;</span></li>
+<li><a href="../honor.htm" target="_self">荣誉资质</a></li>
+<li><span>&nbsp;</span></li>
+<li><a href="../products.htm" target="_self">产品展示</a></li>
+<li><span>&nbsp;</span></li>
+</ul>
+</div>
+<div class="flash">
+    <div id="focus">
+		<ul>
+			<li><a href="#" target="_blank"><img src="../images/01.jpg"  border="0"  /></a></li>
+			<li><a href="#" target="_blank"><img src="../images/02.jpg"  border="0"  /></a></li>
+			<li><a href="#" target="_blank"><img src="../images/03.jpg"  border="0"  /></a></li>
+		</ul>
+	</div>
+</div>
+<div class="bodyer">
+  <div class="bodyer1">
+  <div class="lefter">
+<ul>
+<li><a href="../products/product1.htm"  title="不锈钢金属软管">不锈钢金属软管</a></li>
+<li><a href="../products/product2.htm"  title="铠装隔热胶管总成">铠装隔热胶管总成</a></li>
+<li><a href="../products/product3.htm"  title="超高压钢丝缠绕胶管">超高压钢丝缠绕胶管</a></li>
+<li><a href="../products/product4.htm"  title="高压钢丝编织胶管">高压钢丝编织胶管</a></li>
+<li><a href="../products/product5.htm"  title="石油高压钻探胶管">石油高压钻探胶管</a></li>
+<li><a href="../products/product6.htm"  title="夹布胶管">大口径钢丝胶管</a></li>
+<li><a href="../products/product7.htm"  title="喷砂胶管">夹布胶管</a></li>
+<li><a href="../products/product8.htm"  title="喷砂胶管">喷砂胶管</a></li>
+<li><a href="../products/product9.htm"  title="橡胶软接头">橡胶软接头</a></li>
+</ul>
+</div>
+<div class="righter">
+<div class="righter110">
+	
+<div class="comrighttitle">
+当前位置：<span><a href="../index.htm" >首页</a> > <a href="" >公司新闻</a> > 查看新闻</span>
+</div>
+<div id="comrightcon">
+	  <table width="100%" border="0" align="center" cellpadding="5" cellspacing="0">
+      
+      <tr>
+        <td height="60" valign="bottom"><div align="center" style="color:#990000; font-size:16px; font-weight:bold">高压胶管行业有了很大的发展和长足的进步</div></td>
+      </tr>
+      <tr>
+        <td height="50"><div align="center">作者：admin&nbsp; 来源：本站&nbsp; 发表时间：2016-7-11&nbsp; 点击：809</div></td>
+      </tr>
+      <tr>
+        <td height="280" valign="top"><div id="body"><P>&nbsp;&nbsp;&nbsp; 中国高压胶管行业自改革开放的20多年来有了很大的发展和长足的进步，这不仅反映在产值、产量上的大幅度增长，而且在品种、规格还是在综合技术水平上都取得了可观的成绩。而在过快发展的同时，由于高压胶管企业大多以销量为主导的营销方式，也给中国高压胶管行业带来了一些弊病。这些已经摆在我们面前的现实，不能不引起我们胶管和高压胶管行业的思考。在思考这些问题的同时，我们必须发现自己和了解自己，只有面对存在的问题，才能去分析、去解决。<BR>&nbsp;&nbsp;&nbsp; 纵观的发展，主要存在以下七大问题：</P>
+<P>&nbsp;&nbsp;&nbsp; 一、好大喜全，产品不专一 <BR>&nbsp;&nbsp;&nbsp; 品牌定位要有针对性，利用特定的品牌形象，才能吸引特定的目标群体。而我国许多高压胶管企业在品牌定位上舍不得牺牲，总是漫天撒网，希望让客户认为自己的企业什么类型的高压胶管都能做；认为将目标市场定得越庞大，成功的把握也就越大。</P>
+<P>&nbsp;&nbsp;&nbsp; 二、无研发能力，缺乏创新<BR>&nbsp;&nbsp;&nbsp; 研发能力差，可以说没有资金的投入或只有少量资金的投入。既使是所谓的新产品研发，也只是走边接单，边设计，边生产的模式，在某种程度上造成了设备性能的不可靠和工艺的不成熟，给客户的使用带来了隐患。</P>
+<P>&nbsp;&nbsp;&nbsp; 三、技术改造滞后，模仿严重<BR>&nbsp;&nbsp;&nbsp; 许多高压胶管企业从品牌的命名，到研发技术，再到产品的性能和销售的模式，都开始模仿别人。模仿是人的本能，人类之所以模仿，才发展到今天。所有的创新，也皆是建立在模仿的基础之上。但模仿只能说是一种学习的方式，一味的模仿别人，而忽视了企业自身的内涵，企业很难做强做大。</P>
+<P>&nbsp;&nbsp;&nbsp; 四、管理机制和模式落后<BR>&nbsp;&nbsp;&nbsp; 家族式或进展到朋友之间的股份合作式反映了做坊式陈旧的管理理念，反映了以人制代替法规制的陋习。机制性的弊端不可能促进企业的发展，现代企业三项制度的激励模式不可能在企业中予以贯彻。即使现在已经进行了股份制改造的企业，或是已经获得中国机械工业管理先进的企业，在管理上仍大大落后于西方发达国家。</P>
+<P>&nbsp;&nbsp;&nbsp; 五、重视广告超过重视产品质量本身 <BR>中国的许多高压胶管企业，表面上看来似乎很有创新能力，不断创造概念与热点，这些所谓的概念无非就是引导消费者，说明自己的高压胶管好。但高压胶管毕竟是机械用品，不是让消费者当成日常用品来用的，因此并没有传达出品牌的核心价值，弄不好，反而会弄巧成拙。现在随着市场的成熟，消费者在购买产品时也越来越理智了，仅仅靠着广告铺天盖地的轰炸，仅仅靠着一两个莫名奇妙的花招，就想来糊弄消费者，消费者照样不买你的帐。</P>
+<P>&nbsp;&nbsp;&nbsp; 六、行业技术人才严重匮乏。<BR>&nbsp;&nbsp;&nbsp; 这是我们高压胶管行业乃至整个机械工业普遍存在的共性问题。高素质开拓型的技术人员，一技之长的能工巧匠，管理独具的白领阶层，都显得匾乏和捉襟见肘。技术人员、技术工人、管理人员是支撑企业生存的三根基石，缺一不可。而在我们的企业里三种人才普遍短缺，那么就软化了企业生存的基础。真正在大学学高压胶管专业毕业后从事产品研发的，充其量不足25%，这就给高压胶管设备行业基础人才的积累带来了隐患。技术的提升靠人才，靠人才的综合素质，靠高素质的技术团队去实现。</P>
+<P>&nbsp;&nbsp;&nbsp; 七、产品无统一标准。</P></div></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      
+      <tr>
+        <td><hr align="right" width="100%" size="0" noshade="noshade" /></td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" cellpadding="0" cellspacing="1">
+            <tr>
+              <td><div align="left">
+                
+                上条新闻：无</div></td>
+                </tr>
+                <tr>
+              <td><div align="left">下条新闻：<a href="iNews2.htm" >金属软管网套钢带编织锭数对网套强度的影响</a></div></td>
+            </tr>
+          </table></td>
+      </tr>
+      <tr>
+        <td><div align="center"></div></td>
+      </tr>
+    </table>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<style type="text/css">
+.bottom  {
+	font-size: 16px;
+	color: #FFF;
+	text-decoration: none;
+	line-height: 30px;
+}
+</style>
+<div class="bottom">
+联系人：张先生　手机：15241127123　电话：0411-86269515  地址：大连市旅顺口区三涧堡街道韩家村</div>
+</div>
+</div>
+</div>
+</body>
+</html>
